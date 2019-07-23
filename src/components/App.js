@@ -1,8 +1,17 @@
 import React, {Component} from "react";
+import Notes from "./Notes";
 
 class App extends Component{
+  constructor(props){
+    super(props);
+    this.state={
+      notes:[]
+    };
+  }
+
   render(){
-    return <h1>Hello world</h1>
+    return <Notes notes={this.state.notes}/>;
+
   }
 }
 
